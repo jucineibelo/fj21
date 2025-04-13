@@ -24,6 +24,7 @@ public class AdicionaContatoServlet extends HttpServlet {
 		String name = request.getParameter("name");
 		String endereco = request.getParameter("endereco");
 		String dataNascimento = request.getParameter("dataNascimento");
+		String email = request.getParameter("email");
 
 		LocalDateTime dataNascimentoConvertida = LocalDateTime.parse(dataNascimento);
 
@@ -31,6 +32,7 @@ public class AdicionaContatoServlet extends HttpServlet {
 		contato.setName(name);
 		contato.setEndereco(endereco);
 		contato.setDataNascimento(dataNascimentoConvertida);
+		contato.setEmail(email);
 
 		ContatoDao dao = new ContatoDao();
 		dao.adicionaContato(contato);

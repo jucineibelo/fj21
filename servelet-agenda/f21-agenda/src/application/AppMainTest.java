@@ -27,7 +27,8 @@ public class AppMainTest {
 		
 		
 		FuncionarioDao dao = new FuncionarioDao();
-		dao.adicionaFuncionario(f1);
+		//dao.adicionaFuncionario(f1);
+
 		
 		//Teste insert Contato
 		
@@ -37,7 +38,7 @@ public class AppMainTest {
 		c1.setDataNascimento(LocalDateTime.now());
 		
 		ContatoDao contatoDao = new ContatoDao();
-		contatoDao.adicionaContato(c1);
+		//contatoDao.adicionaContato(c1);
 		System.out.println("Contato Salvo com sucesso!" + "\n" + c1);
 	}
 

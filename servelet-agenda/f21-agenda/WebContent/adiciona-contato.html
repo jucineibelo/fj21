@@ -3,96 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <title>Adicionar Contato</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(135deg, #c3ecff, #a9c9ff);
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    form {
-      background-color: #ffffff;
-      padding: 40px;
-      border-radius: 15px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-      width: 100%;
-      max-width: 400px;
-      animation: fadeIn 0.8s ease-in-out;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-15px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    h2 {
-      text-align: center;
-      color: #2c3e50;
-      margin-bottom: 25px;
-    }
-
-    label {
-      display: block;
-      margin-bottom: 5px;
-      font-weight: bold;
-      color: #333;
-    }
-
-    input[type="text"] {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 18px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      transition: all 0.3s ease;
-      font-size: 15px;
-    }
-
-    input[type="text"]:focus {
-      border-color: #5fa8d3;
-      box-shadow: 0 0 8px rgba(95, 168, 211, 0.3);
-      outline: none;
-    }
-
-    input[type="submit"] {
-      width: 100%;
-      padding: 12px;
-      background: linear-gradient(to right, #667eea, #764ba2);
-      color: #fff;
-      border: none;
-      border-radius: 8px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: transform 0.2s, box-shadow 0.3s;
-    }
-
-    input[type="submit"]:hover {
-      transform: scale(1.02);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    }
-  </style>
 </head>
 <body>
 
   <form action="adicionaContato" method="post">
-    <h2>📇 Adicionar Contato</h2>
+    <h2>Adicionar Contato</h2>
 
-    <label for="nome">Nome:</label>
+    <label for="name">Nome:</label>
     <input type="text" id="name" name="name" placeholder="Ex: Maria Silva">
+    <br />
 
     <label for="email">Email:</label>
     <input type="text" id="email" name="email" placeholder="Ex: maria@email.com">
+    <br />
 
     <label for="endereco">Endereço:</label>
     <input type="text" id="endereco" name="endereco" placeholder="Ex: Rua das Flores, 123">
+    <br />
 
     <label for="dataNascimento">Data Nascimento:</label>
     <input type="datetime-local" id="dataNascimento" name="dataNascimento" placeholder="AAAA-MM-DD">
+    <br />
 
     <input type="submit" value="Gravar">
   </form>
